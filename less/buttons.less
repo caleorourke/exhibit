@@ -1,0 +1,49 @@
+/*
+ * buttons.less
+ *
+ * Button properties should always be defined in buttons.less. This prevents issues
+ * with conflicting properties. Here, you can edit or add new buttons properties.
+ * Remember to comb this stylesheet before committing.
+ *
+ */
+
+@import "mixins.less";
+
+button {
+  &.submit {
+    .transition(all .2s ease-in-out 0s);
+    position: relative;
+    width: auto;
+    padding: 11px 20px;
+    margin: 20px 0;
+    font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.3rem;
+    font-weight: @font-weight-normal;
+    letter-spacing: 3px;
+    color: @white;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: @gray10;
+    border: 1px solid transparent;
+  }
+}
+
+button {
+  &.submit {
+    &:hover {
+      color: @gray25;
+      background-color: @icon-color;
+    }
+  }
+}
+
+.button {
+  &.submit {
+    &:focus,
+    &:active {
+      color: @gray25;
+      background-color: @icon-color;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+/*
+ * nav.less
+ *
+ * Nav properties should always be defined in nav.less. This allows others
+ * to see how the relative layers work with the animated controls in settings.js
+ * and code in nav.html. Remember to comb this stylesheet before committing.
+ *
+ */
+
+@import "mixins.less";
+
+#navbar-menu {
+  .transition(all .8s);
+  padding: 20px;
+  &.navbar-default {
+    background-color: rgba(248,248,248,0);
+  }
+  a {
+    &.navbar-brand {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: @gray30;
+      text-transform: uppercase;
+      i {
+        color: @gray55;
+      }
+    }
+  }
+  &.navbar-default {
+    .navbar-nav {
+      > li {
+        > a {
+          font-size: 1.2rem;
+          letter-spacing: 1px;
+          color: @gray30;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+.on {
+  padding: 0 !important;
+  background-color: @white !important;
+}
+
+.navbar {
+  &.navbar-default {
+    &.navbar-fixed-top {
+      border-bottom: 1px solid transparent;
+      &.on {
+        border-bottom: 1px solid @gray75;
+      }
+    }
+  }
+}
+
+.navbar-default {
+  .navbar-nav {
+    > .active {
+      > a {
+        font-weight: 700;
+        color: @gray25 !important;
+        background-color: transparent;
+        &:focus,
+        &:hover {
+          font-weight: 700;
+          color: @gray25 !important;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.navbar-toggle {
+  border-radius: 0;
+}
+
+.navbar-default {
+  .navbar-toggle {
+    &:hover,
+    &:focus {
+      color: @gray25;
+      background-color: @icon-color;
+      border-color: @icon-color;
+    }
+    &:hover {
+      > .icon-bar {
+        background-color: @gray25;
+      }
+    }
+  }
+}

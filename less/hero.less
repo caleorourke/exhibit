@@ -1,0 +1,47 @@
+/*
+ * hero.less
+ *
+ * Hero properties should always be defined in hero.less. This prevents issues
+ * with conflicting properties. Here, you can edit or add new hero properties.
+ * Remember to comb this stylesheet before committing.
+ *
+ */
+
+.hero {
+  color: @gray30;
+  background: url(../img/header.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  h1 {
+    margin-bottom: 28px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 6.2rem;
+    font-weight: @font-weight-xbold;
+    letter-spacing: .16rem;
+  }
+  p {
+    &.lead {
+      font-size: 1.8rem;
+      color: @gray30;
+    }
+  }
+}
+
+.hero-content {
+  position: relative;
+  padding: 19% 0 15%;
+  hr {
+    width: 100px;
+    height: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: @gray40;
+    border: 0 none;
+  }
+  mark {
+    padding: 0;
+    color: inherit;
+  }
+}

@@ -1,0 +1,62 @@
+/*
+ * testimonials.less
+ *
+ * Testimonial properties should always be defined in testimonials.less. This prevents issues
+ * with conflicting properties. Here, you can edit or add new testimonials properties.
+ * Remember to comb this stylesheet before committing.
+ *
+ */
+
+.testimonials {
+  color: #ffffff;
+  background: url(../img/testimonials.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  .overlay {
+    padding: 80px 0;
+    background: rgba(0, 0, 0, .8);
+    background-attachment: fixed;
+  }
+  .section-title {
+    &.center {
+      h2 {
+        color: #eeeeee;
+      }
+    }
+  }
+  mark {
+    padding: .01em;
+  }
+}
+
+#quotes {
+  padding: 2px 0 30px;
+  .item {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-image: url("../img/blockquote.png");
+    background-repeat: no-repeat;
+    h5 {
+      font-family: "Lekton", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 32px;
+      color: #cbcbcb;
+      text-transform: none;
+    }
+    p {
+      margin: 20px 0;
+      font-weight: 400;
+      color: #999999;
+    }
+    img {
+      max-width: 90px;
+      margin-top: 20px;
+      border-radius: 50%;
+    }
+  }
+}

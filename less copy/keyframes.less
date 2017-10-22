@@ -1,0 +1,32 @@
+/*
+ * keyframes.less
+ *
+ * Keyframe properties should always be defined in keyframes.less. This
+ * prevents issues with conflicting properties. Here, you can edit or add new
+ * keyframe properties.
+ *
+ * DO NOT COMB THIS STYLESHEET!
+ *
+ */
+
+@-webkit-keyframes loader-anim {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes loader-anim {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}

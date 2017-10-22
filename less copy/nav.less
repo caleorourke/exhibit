@@ -1,0 +1,88 @@
+/*
+ * nav.less
+ *
+ * Nav properties should always be defined in nav.less. This allows others
+ * to see how the relative layers work with the animated controls in settings.js
+ * and code in nav.html. Remember to comb this stylesheet before committing.
+ *
+ */
+
+#navbar-menu {
+  padding: 20px;
+  transition: all .8s;
+  &.navbar-default {
+    background-color: rgba(248, 248, 248, 0);
+  }
+  a {
+    &.navbar-brand {
+      font-family: "Montserrat", sans-serif;
+      font-size: 22px;
+      font-weight: 900;
+      color: #434242;
+      text-transform: uppercase;
+      i {
+        color: #bbbbbb;
+      }
+    }
+  }
+  &.navbar-default {
+    .navbar-nav {
+      > li {
+        > a {
+          font-size: 12px;
+          letter-spacing: 1px;
+          color: #434242;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+.on {
+  padding: 0 !important;
+  background-color: #ffffff !important;
+}
+
+.navbar {
+  &.navbar-default {
+    &.navbar-fixed-top {
+      border-bottom: 1px solid transparent;
+      &.on {
+        border-bottom: 1px solid #eeeeee;
+      }
+    }
+  }
+}
+
+.navbar-default {
+  .navbar-nav {
+    > .active {
+      > a, > a:hover, > a:focus {
+        font-weight: 700;
+        color: #333333 !important;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.navbar-toggle {
+  border-radius: 0;
+}
+
+.navbar-default {
+  .navbar-toggle {
+    &:hover,
+    &:focus {
+      color: #333333;
+      background-color: #fef7a4;
+      border-color: #fef7a4;
+    }
+    &:hover {
+      > .icon-bar {
+        background-color: #333333;
+      }
+    }
+  }
+}

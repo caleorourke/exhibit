@@ -1,0 +1,200 @@
+/*
+ * mixins.less
+ *
+ * Mixins should always be defined in mixins.less. This allows others to see
+ * the complete list of declared mixins and their properties. Each mixin should
+ * begin with '.*' to make it easily identified. Here, you can edit or add
+ * new mixins and mixin properties.
+ *
+ * DO NOT COMB THIS STYLESHEET!
+ *
+ */
+
+/*
+ * 1. Clearfix
+ * 2. Text
+ * 3. Animation
+ * 4. Backface
+ * 5. Background Size
+ * 6. Button Variants
+ * 7. Sizes
+ * 8. Transform
+ * 9. Translate
+ * 10. Transition
+ * 11. Highlight Color
+ * 12. Alignment
+ *
+ */
+
+/* =========================
+   Text
+   ========================= */
+
+.antialiased-text() {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.adjust-text() {
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+.optimize-text() {
+  text-rendering: optimizeLegibility;
+}
+
+.user-select(@user-select) {
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* =========================
+   Animation
+   ========================= */
+
+.animation(@animation) {
+  -webkit-animation: @animation;
+          animation: @animation;
+}
+
+.animation-name(@name) {
+  -webkit-animation-name: @name;
+          animation-name: @name;
+}
+
+.animation-duration(@duration) {
+  -webkit-animation-duration: @duration;
+          animation-duration: @duration;
+}
+
+.animation-timing-function(@timing-function) {
+  -webkit-animation-timing-function: @timing-function;
+          animation-timing-function: @timing-function;
+}
+
+.animation-delay(@delay) {
+  -webkit-animation-delay: @delay;
+          animation-delay: @delay;
+}
+
+.animation-iteration-count(@iteration-count) {
+  -webkit-animation-iteration-count: @iteration-count;
+          animation-iteration-count: @iteration-count;
+}
+
+.animation-direction(@direction) {
+  -webkit-animation-direction: @direction;
+          animation-direction: @direction;
+}
+
+.animation-fill-mode(@fill-mode) {
+  -webkit-animation-fill-mode: @fill-mode;
+     -moz-animation-fill-mode: @fill-mode;
+          animation-fill-mode: @fill-mode;
+}
+
+/* =========================
+   Backface
+   ========================= */
+
+.backface-visibility(@visibility) {
+  -webkit-backface-visibility: @visibility;
+          backface-visibility: @visibility;
+}
+
+/* =========================
+   Background Size
+   ========================= */
+
+.background-size(@background-size) {
+  background-size: @background-size;
+}
+
+/* =========================
+   Sizes
+   ========================= */
+
+.box-sizing(@boxmodel) {
+  box-sizing: @boxmodel;
+}
+
+/* =========================
+   Transform
+   ========================= */
+
+.transform(@transform) {
+  -webkit-transform: @transform;
+          transform: @transform;
+}
+
+.transform-style(@transform-style) {
+  -webkit-transform-style: @transform-style;
+          transform-style: @transform-style;
+}
+
+.transform-origin(@origin) {
+  -webkit-transform-origin: @origin;
+          transform-origin: @origin;
+}
+
+/* =========================
+   Translate
+   ========================= */
+
+.translate(@x; @y) {
+  -webkit-transform: translate(@x, @y);
+          transform: translate(@x, @y);
+}
+
+.translate3d(@x; @y; @z) {
+  -webkit-transform: translate3d(@x, @y, @z);
+          transform: translate3d(@x, @y, @z);
+}
+
+/* =========================
+   Transition
+   ========================= */
+
+.transition(@transition) {
+  -webkit-transition: @transition;
+          transition: @transition;
+}
+
+.transition-property(@transition-property) {
+  -webkit-transition-property: @transition-property;
+          transition-property: @transition-property;
+}
+
+.transition-delay(@transition-delay) {
+  -webkit-transition-delay: @transition-delay;
+          transition-delay: @transition-delay;
+}
+
+.transition-duration(@transition-duration) {
+  -webkit-transition-duration: @transition-duration;
+          transition-duration: @transition-duration;
+}
+
+.transition-timing-function(@timing-function) {
+  -webkit-transition-timing-function: @timing-function;
+          transition-timing-function: @timing-function;
+}
+
+.transition-transform(@transition) {
+  -webkit-transition: -webkit-transform @transition;
+     -moz-transition: -moz-transform @transition;
+          transition: transform @transition;
+}
+
+/* =========================
+   Highlight Color
+   ========================= */
+
+.tap-highlight-color(@highlight-color) {
+  -webkit-tap-highlight-color: @highlight-color;
+     -moz-tap-highlight-color: @highlight-color;
+}

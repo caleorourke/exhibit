@@ -1,0 +1,63 @@
+#
+# * _config.yml
+# *
+# * Localized configuration file. Config values should always be defined in _config.yml. Do not edit
+# * existing config values. Use spaces only, no tabs. Wrap quotes around words or phrases that contain
+# * commas or apostrophes.
+#
+
+# ==============================
+# Project
+# ==============================
+
+title:          "Lance Manson"
+headline:       I define and design products for cloud markets.
+tagline:        Product Management and Design
+license:        MIT
+keywords:       "caleorourke,career,cloud computing,dallas,design,dfw,employment,experience,history,job,linkedin,manager,management,marketing,michael,mike,orourke,o'rourke,ororke,position,product,product design,product manager,profession,project,resume,rourke,scrum,texas,thisismichaelorourke.com,tx,united states,us,usa,work"
+description:    "Michael O'Rourke is an accomplished technologist with experience managing the strategic and tactical avenues for products in high-tech industries. He is creative and analytical with an extensive background in Software Development, Product Innovation, and Cloud Computing. Michael currently works for IBM Cloud in Dallas, Texas."
+
+# ==============================
+# References
+# ==============================
+
+phone:          "+1 512.740.4491"
+email:          cale.orourke@gmail.com
+address:
+  street:       "130 Wilmington Dr."
+  city:         "Fate, TX 75189"
+links:
+  email:        mailto:cale.orourke@gmail.com
+  github:       http://github.com/caleorourke
+  linkedin:     http://www.linkedin.com/in/caleorourke
+  twitter:      http://twitter.com/caleorourke
+
+member:
+  comptia:      COMP001006245476
+  liberty:      22889837‏
+  pmp:          1386298
+  scrum:        106785
+
+products:
+  canary:       "PaaS, Monitoring, Dashboard UI"
+  chef:         "IaaS, Open Source, Virtual Machines"
+  envoy:        "IaaS, Cold Storage, CDN, Transcoding"
+  jumpgate:     "IaaS, Open Source, Drivers"
+  mosina:       "DaaS, App Integration, CLI"
+  osiris:       "SaaS, e-Commerce, M2M, Networking"
+  quasar:       "IaaS, OpenStack, Platform Services"
+  silhouette:   "PaaS, Shared Service, BI, ETL"
+  simone:       "SaaS, Ticketing, Mobility, CRM"
+
+# ==============================
+# Server
+# ==============================
+
+baseurl:        /rye
+permalink:      pretty
+exclude:        ["Gruntfile.js",
+                 "js",
+                 "less",
+                 "node_modules",
+                 "package.json",
+                 "README.md"]

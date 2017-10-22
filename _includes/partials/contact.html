@@ -1,0 +1,36 @@
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="section-title center wow fadeIn">
+        <h2>Say <mark>Hello</mark></h2>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore.</p>
+      </div>
+      <div class="col-md-7 contact-left">
+        <div class="contact-details wow fadeIn" data-wow-duration="1s" data-wow-delay=".2s">
+          <h3>Contact Details</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="col-md-5 contact-right">
+        <div class="contact-details wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+          <div class="icon icon-phone"></div>
+          <h3>Phone</h3>
+          <p>{{site.phone}}</p>
+        </div>
+        <div class="contact-details wow fadeIn" data-wow-duration="1s" data-wow-delay=".4s">
+          <div class="icon icon-map"></div>
+          <h3>Address</h3>
+          <p>{{site.address.street}}<br>
+            {{site.address.city}}</p>
+        </div>
+        <div class="contact-details wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
+          <div class="icon icon-envelope"></div>
+          <h3>Email</h3>
+          <p>{{site.email}}</p>
+          <button type="submit" class="submit">Send Email</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

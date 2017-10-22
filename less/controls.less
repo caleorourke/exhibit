@@ -1,0 +1,124 @@
+/*
+ * controls.less
+ *
+ * Control properties should always be defined in control.less. This prevents
+ * issues with conflicting properties. Here, you can edit or add new control
+ * properties. Remember to comb this stylesheet before committing.
+ *
+ */
+
+@import "mixins.less";
+
+.owl-theme {
+  .owl-controls {
+    margin-top: 10px;
+    text-align: center;
+    .owl-buttons {
+      div {
+        display: inline-block;
+        padding: 3px 10px;
+        margin: 5px;
+        font-size: 12px;
+        color: #ffffff;
+        zoom: 1;
+        background: #869791;
+        border-radius: 30px;
+        opacity: .5;
+      }
+    }
+    &.clickable {
+      .owl-buttons {
+        div {
+          &:hover {
+            text-decoration: none;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .owl-page {
+      display: inline-block;
+      zoom: 1;
+      span {
+        display: block;
+        width: 19px;
+        height: 3px;
+        margin: 5px 7px;
+        background: #adadad;
+        border-radius: 0;
+        opacity: .5;
+      }
+    }
+  }
+}
+
+.owl-theme {
+  .owl-controls {
+    .owl-page {
+      &.active {
+        span {
+          opacity: 1;
+        }
+      }
+    }
+    &.clickable {
+      .owl-page {
+        &:hover {
+          span {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    span {
+      &.owl-numbers {
+        width: auto;
+        height: auto;
+        padding: 2px 10px;
+        font-size: 12px;
+        color: #ffffff;
+        border-radius: 30px;
+      }
+    }
+  }
+}
+
+.owl-item {
+  &.loading {
+    min-height: 150px;
+    background: url(AjaxLoader.gif) no-repeat center center;
+  }
+}
+
+/* Theme Controls --- Do Not Delete */
+.owl-theme {
+  .owl-controls {
+    .owl-page {
+      span {
+        .transition(all .5s);
+        display: block;
+        width: 10px;
+        height: 10px;
+        margin: 5px 7px;
+        background: @white;
+        border-radius: 0;
+        opacity: 1;
+      }
+      &.active {
+        span {
+          background: @icon-color;
+        }
+      }
+    }
+    &.clickable {
+      .owl-page {
+        &:hover {
+          span {
+            background: @icon-color;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

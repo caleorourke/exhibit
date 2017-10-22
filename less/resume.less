@@ -1,0 +1,77 @@
+/*
+ * resume.less
+ *
+ * Resume properties should always be defined in resume.less. This prevents issues
+ * with conflicting properties. Here, you can edit or add new resume properties.
+ * Remember to comb this stylesheet before committing.
+ *
+ */
+
+@import "mixins.less";
+
+.resume {
+  padding: 100px 0;
+  background-color: @gray95;
+  i {
+    &.icon {
+      .transition(all .5s ease 0s);
+      width: 80px;
+      height: 80px;
+      padding: 26px 8px;
+      margin-bottom: 5px;
+      font-size: 4rem;
+      color: @gray30 !important;
+      border: 0 none;
+    }
+  }
+}
+
+.education {
+  article {
+    padding: 0 0 60px;
+  }
+  .holder {
+    padding: 0 0 24px;
+    margin: 0 0 95px;
+    overflow: hidden;
+    border-bottom: 1px solid @gray60;
+  }
+  h3 {
+    padding-bottom: 8px;
+    font-size: 1.9rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: @gray30;
+    text-transform: uppercase;
+  }
+  h2 {
+    margin: 12px 0;
+    font-size: 2rem;
+    line-height: 1.8;
+    letter-spacing: 2px;
+    color: @gray10;
+  }
+  .info-line {
+    margin: -8px 0 10px;
+    span {
+      margin: 0 4px 0 0;
+      font-weight: 500;
+    }
+  }
+  .years {
+    display: inline-block;
+    padding: 0 11px;
+    margin: 0 0 30px;
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 29px;
+    color: @gray30;
+    background-color: @icon-color;
+  }
+  .divider {
+    display: block;
+    height: 1px;
+    margin: 0 0 21px;
+    background: @gray60 none repeat scroll 0 0;
+  }
+}

@@ -1,0 +1,71 @@
+/*
+ * product.less
+ *
+ * Product properties should always be defined in product.less. This prevents issues
+ * with conflicting properties. Here, you can edit or add new product properties.
+ * Remember to comb this stylesheet before committing.
+ *
+ */
+
+.product {
+  padding: 100px 0;
+  li {
+    &.pull-right {
+      margin-top: 10px;
+    }
+  }
+  i {
+    &.fa {
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      font-size: 2rem;
+      color: @gray30;
+      border-radius: 50%;
+    }
+  }
+}
+
+.categories {
+  padding: 10px 0 25px;
+}
+
+ul {
+  &.cat {
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+ol {
+  &.type {
+    li {
+      display: inline-block;
+      margin-left: 20px;
+      text-transform: uppercase;
+      &:after {
+        margin-left: 20px;
+        color: @gray55;
+        content: " / ";
+      }
+      &:last-child:after {
+        content: "";
+      }
+      a {
+        color: @gray40;
+        &.active {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.product-item {
+  margin-bottom: 30px;
+  .hover-bg {
+    position: relative;
+    overflow: hidden;
+  }
+}

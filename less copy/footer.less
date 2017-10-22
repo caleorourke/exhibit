@@ -1,0 +1,72 @@
+/*
+ * footer.less
+ *
+ * Footer properties should always be defined in footer.less. This prevents
+ * issues with conflicting properties. Here, you can edit or add new footer
+ * properties. Remember to comb this stylesheet before committing.
+ *
+ */
+
+.footer {
+  padding: 90px 0 80px 0;
+  color: #a7a7a7;
+  text-align: center;
+  background: #131313;
+  p {
+    padding-bottom: 15px;
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  i {
+    &.fa {
+      width: 30px;
+      height: 30px;
+      padding: 4px 5px;
+      font-size: 17px;
+      color: #a7a7a7;
+      transition: all .5s;
+      &:hover {
+        color: #888888;
+      }
+    }
+  }
+}
+
+ul {
+  &.footer-social {
+    li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}
+
+#go  {
+  position: relative !important;
+  z-index: 99;
+  display: block;
+}
+
+.back-to-top {
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  z-index: 100;
+  display: block;
+  width: 47px;
+  height: 72px;
+  margin: -37px auto;
+  font-size: 22px;
+  line-height: 72px;
+  color: #111111;
+  text-align: center;
+  cursor: pointer;
+  background-color: #faf584;
+  border-radius: 5px;
+  a {
+    display: block;
+  }
+}
