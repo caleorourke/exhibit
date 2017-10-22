@@ -1,12 +1,12 @@
-<a href="https://travis-ci.org/caleorourke/rye?branch=gh-pages" target="_blank"><img src="http://travis-ci.org/caleorourke/rye.svg?branch=gh-pages"></a>
-<a href="https://david-dm.org/caleorourke/rye#info=devDependencies" target="_blank"><img src="https://david-dm.org/caleorourke/rye/dev-status.svg?theme=shields.io"></a>
-<a href="http://github.com/caleorourke/rye/blob/gh-pages/LICENSE" target="_blank"><img src="http://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License"></a>
+<a href="https://travis-ci.org/caleorourke/exhibit?branch=gh-pages" target="_blank"><img src="http://travis-ci.org/caleorourke/exhibit.svg?branch=gh-pages"></a>
+<a href="https://david-dm.org/caleorourke/exhibit#info=devDependencies" target="_blank"><img src="https://david-dm.org/caleorourke/exhibit/dev-status.svg?theme=shields.io"></a>
+<a href="http://github.com/caleorourke/exhibit/blob/gh-pages/LICENSE" target="_blank"><img src="http://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License"></a>
 
-## Introducing Rye
-Rye is a one-page template designed specifically for hosting on [GitHub Pages](http://pages.github.com) and serving locally using [Jekyll](http://jekyllrb.com).
+## Introducing exhibit
+exhibit is a one-page template designed specifically for hosting on [GitHub Pages](http://pages.github.com) and serving locally using [Jekyll](http://jekyllrb.com).
 
 ## Prerequisites
-Rye requires the minimum versions of Node and Ruby below.
+exhibit requires the minimum versions of Node and Ruby below.
 
 * [Node 0.10.30](http://nodejs.org/download)
 * [Ruby 2.0](http://www.ruby-lang.org/en/installation)
@@ -19,12 +19,12 @@ $ node --version
 $ ruby -v
 ~~~
 
-## Install Rye
-Clone Rye from the `gh-pages` branch on GitHub and go into its directory.
+## Install exhibit
+Clone exhibit from the `gh-pages` branch on GitHub and go into its directory.
 
 ~~~
-$ git clone -b gh-pages https://github.com/caleorourke/rye.git
-$ cd rye
+$ git clone -b gh-pages https://github.com/caleorourke/exhibit.git
+$ cd exhibit
 ~~~
 
 Install Grunt and dev dependencies for Node.
@@ -40,8 +40,8 @@ Install Jekyll and other Ruby runtime dependencies.
 $ sudo grunt install
 ~~~
 
-## Start Using Rye
-Rye leverages [Grunt](http://gruntjs.com) as a harness for installing Node and Ruby dependencies, in addition to serving the site locally.
+## Start Using exhibit
+exhibit leverages [Grunt](http://gruntjs.com) as a harness for installing Node and Ruby dependencies, in addition to serving the site locally.
 
 ### Commands
 Run any of these commands to initiate a task.
@@ -76,7 +76,7 @@ Run any of these commands to initiate a task.
 1. Builds the website locally in the `_site` directory
 2. Spits out any errors found during the build process
 
-## Updating Rye
+## Updating exhibit
 Dependencies are updated often by their original authors. To install the most recent versions, run `sudo npm update`.
 
 If this fails for whatever reason, run the following commands to delete the original `node_modules` directory and build a new one.
