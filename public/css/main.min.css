@@ -1,7 +1,7 @@
 /* 
- * Copyright © 2015 Michael O'Rourke
+ * Copyright © 2017 Michael O'Rourke
  * 
- * Rye, Updated 2015.12.14
+ * Rye, Updated 2017.10.22
  * Code and documentation licensed under the MIT license
  * 
  */
