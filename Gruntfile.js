@@ -34,17 +34,17 @@ module.exports = function (grunt) {
     clean: {
       assets: ['public/css/main.min.css',
                'public/js/main.min.js',
-               'public/js/library.min.js']
+               'public/js/lib.min.js']
     },
 
     concat: {
       vendors: {
-        src: ['js/library/smoothscroll.min.js',
-              'js/library/wow.min.js',
-              'js/library/jquery-isotope.min.js',
-              'js/library/jquery-magnific-popup.min.js',
-              'js/library/jquery-carousel.min.js'],
-        dest: 'public/js/library.min.js'
+        src: ['js/lib/smoothscroll.min.js',
+              'js/lib/wow.min.js',
+              'js/lib/jquery-isotope.min.js',
+              'js/lib/jquery-magnific-popup.min.js',
+              'js/lib/jquery-carousel.min.js'],
+        dest: 'public/js/lib.min.js'
       },
 
       main: {
@@ -62,7 +62,7 @@ module.exports = function (grunt) {
           report: 'min'
         },
         src: '<%= concat.vendors.dest %>',
-        dest: 'public/js/library.min.js'
+        dest: 'public/js/lib.min.js'
       },
 
       main: {
