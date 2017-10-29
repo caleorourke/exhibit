@@ -32,9 +32,9 @@ module.exports = function (grunt) {
     },
 
     clean: {
-      assets: ['public/css/main.min.css',
-               'public/js/main.min.js',
-               'public/js/lib.min.js']
+      assets: ['assets/css/main.min.css',
+               'assets/js/main.min.js',
+               'assets/js/lib.min.js']
     },
 
     concat: {
@@ -44,7 +44,7 @@ module.exports = function (grunt) {
               'js/lib/jquery-isotope.min.js',
               'js/lib/jquery-magnific-popup.min.js',
               'js/lib/jquery-carousel.min.js'],
-        dest: 'public/js/lib.min.js'
+        dest: 'assets/js/lib.min.js'
       },
 
       main: {
@@ -52,7 +52,7 @@ module.exports = function (grunt) {
           banner: '<%= banner %>'
         },
         src: ['js/settings.js'],
-        dest: 'public/js/main.min.js'
+        dest: 'assets/js/main.min.js'
       }
     },
 
@@ -62,7 +62,7 @@ module.exports = function (grunt) {
           report: 'min'
         },
         src: '<%= concat.vendors.dest %>',
-        dest: 'public/js/lib.min.js'
+        dest: 'assets/js/lib.min.js'
       },
 
       main: {
@@ -71,7 +71,7 @@ module.exports = function (grunt) {
           report: 'min'
         },
         src: '<%= concat.main.dest %>',
-        dest: 'public/js/main.min.js'
+        dest: 'assets/js/main.min.js'
       }
     },
 
@@ -83,7 +83,7 @@ module.exports = function (grunt) {
           banner: '<%= banner %>'
         },
         src: ['less/@main.less'],
-        dest: 'public/css/main.min.css'
+        dest: 'assets/css/main.min.css'
       },
       minify: {
         options: {
