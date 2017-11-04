@@ -39,11 +39,11 @@ module.exports = function (grunt) {
 
     concat: {
       vendors: {
-        src: ['js/lib/smoothscroll.min.js',
-              'js/lib/wow.min.js',
-              'js/lib/jquery-isotope.min.js',
-              'js/lib/jquery-magnific-popup.min.js',
-              'js/lib/jquery-carousel.min.js'],
+        src: ['plugins/lib/smoothscroll.min.js',
+              'plugins/lib/wow.min.js',
+              'plugins/lib/jquery-isotope.min.js',
+              'plugins/lib/jquery-magnific-popup.min.js',
+              'plugins/lib/jquery-carousel.min.js'],
         dest: 'assets/js/lib.min.js'
       },
 
@@ -51,7 +51,7 @@ module.exports = function (grunt) {
         options: {
           banner: '<%= banner %>'
         },
-        src: ['js/settings.js'],
+        src: ['plugins/settings.js'],
         dest: 'assets/js/main.min.js'
       }
     },

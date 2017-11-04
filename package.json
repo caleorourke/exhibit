@@ -1,9 +1,9 @@
 {
-  "name": "Rye",
-  "version": "0.0.1",
+  "name": "Exhibit",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/caleorourke/rye.git"
+    "url": "https://github.com/caleorourke/exhibit.git"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
