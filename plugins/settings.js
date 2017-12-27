@@ -1,7 +1,7 @@
 /*
  * settings.js
  *
- * Updated 2015.12.13
+ * Updated 2017.12.27
  * Code and documentation licensed under the MIT license
  *
  */
@@ -75,7 +75,7 @@
     type:        'inline',
     midClick:     true,
     removalDelay: 500,
-    mainClass:   'mfp-fade'
+    mainClass:   'mfp-fade' // this class is for undoing CSS animation below
 
     });
 
